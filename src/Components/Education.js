@@ -37,7 +37,7 @@ export default function Education() {
   });
 
   return (
-    <section className="py-20 bg-[#15202B]" id="education">
+    <section className="py-20 bg-black" id="education">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

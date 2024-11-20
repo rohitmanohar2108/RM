@@ -43,7 +43,7 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-20 bg-[#15202B]" id="skills">
+    <section className="py-20 bg-black" id="skills">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

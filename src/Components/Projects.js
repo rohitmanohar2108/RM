@@ -37,7 +37,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-12 sm:py-20 bg-[#15202B]" id="projects">
+    <section className="py-12 sm:py-20 bg-black" id="projects">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
