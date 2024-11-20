@@ -30,14 +30,14 @@ export default function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+          isScrolled ? 'bg-white backdrop-blur-sm shadow-lg' : 'bg-transparent'
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-14 sm:h-16">
             <motion.a
               href="#home"
-              className="text-xl sm:text-2xl font-bold text-white"
+              className="text-xl sm:text-2xl font-bold text-white bg-[#0A66C2] px-1 py-1 rounded-sm"
               whileHover={{ scale: 1.05 }}
             >
               JD
@@ -49,7 +49,7 @@ export default function Navigation() {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="text-sm lg:text-base text-gray-300 hover:text-white transition-colors"
+                  className="text-sm lg:text-base text-[#333333] hover:text-[#0A66C2] transition-colors"
                   whileHover={{ scale: 1.1 }}
                 >
                   {item.name}
@@ -60,7 +60,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <motion.button
               whileTap={{ scale: 0.95 }}
-              className="md:hidden text-white p-2"
+              className="md:hidden text-black p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,14 +78,14 @@ export default function Navigation() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-40 md:hidden"
           >
-            <div className="absolute inset-0 bg-gray-900/95 backdrop-blur-sm pt-16">
+            <div className="absolute inset-0 bg-[#f3f2ef] backdrop-blur-sm pt-16">
               <div className="container mx-auto px-4">
                 <div className="flex flex-col space-y-2">
                   {navItems.map((item) => (
                     <motion.a
                       key={item.name}
                       href={item.href}
-                      className="text-white text-lg sm:text-xl font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50"
+                      className="text-[#333333] text-lg sm:text-xl font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50"
                       whileHover={{ x: 10 }}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >

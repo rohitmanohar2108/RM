@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#64ffda] rounded-full;
+  @apply bg-[#333333] rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -50,7 +50,7 @@ body {
 
 .animated-border::after {
   content: '';
-  @apply absolute inset-0 border-2 border-[#64ffda] rounded-lg;
+  @apply absolute inset-0 border-2 border-[#333333] rounded-lg;
   animation: borderAnimation 8s linear infinite;
 }
 

@@ -6,12 +6,12 @@ import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import Contact from "./Components/Contact";
-import Background from "./Components/Background";
+
 
 function App() {
   return (
-    <div className="bg-[#0a192f] relative">
-      <Background />
+    <div className="bg-[#0a192f]  relative">
+    
       <Navigation />
       <main>
         <Hero />
@@ -21,6 +21,9 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <footer className="bg-[#f3f2ef] py-4 text-center text-sm  text-[#333333]">
+        <p>© {new Date().getFullYear()} Rohit Manohar. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

@@ -1,19 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 to-black px-4 sm:px-6">
-      <div className="absolute inset-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072')] bg-cover bg-center opacity-10" />
-      
-      <motion.div 
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr bg-[#f3f2ef] px-4 sm:px-6">
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="container mx-auto z-10"
+        className="w-full max-w-lg bg-white border border-[#D1D1D1] shadow-lg rounded-lg p-8 sm:p-12 relative"
       >
         <div className="text-center">
+          {/* Profile Image */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -27,45 +26,50 @@ export default function Hero() {
             />
           </motion.div>
 
+          {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-2 sm:mb-4"
+            className="text-3xl sm:text-4xl font-bold text-black mb-2"
           >
             John Developer
           </motion.h1>
 
+          {/* Title */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-lg sm:text-xl md:text-2xl text-blue-400 mb-6 sm:mb-8"
+            className="text-lg sm:text-xl text-[#0A66C2] mb-4"
           >
             Senior Frontend Developer
           </motion.h2>
 
+          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12 px-4"
+            className="text-sm sm:text-base text-[#333333] max-w-md mx-auto mb-6"
           >
-            Crafting exceptional digital experiences with modern web technologies.
-            Specialized in React, TypeScript, and cutting-edge frontend architecture.
+            Crafting exceptional digital experiences with modern web
+            technologies. Specialized in React, TypeScript, and cutting-edge
+            frontend architecture.
           </motion.p>
 
+          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex justify-center space-x-4 sm:space-x-6"
+            className="flex justify-center space-x-4"
           >
             {[
               { Icon: Github, href: "https://github.com" },
               { Icon: Linkedin, href: "https://linkedin.com" },
               { Icon: Twitter, href: "https://twitter.com" },
-              { Icon: Mail, href: "mailto:contact@example.com" }
+              { Icon: Mail, href: "mailto:contact@example.com" },
             ].map(({ Icon, href }, index) => (
               <motion.a
                 key={index}
@@ -74,28 +78,29 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-white hover:text-blue-400 transition-colors"
+                className="text-[#333333] hover:text-[#0A66C2] transition-colors"
               >
                 <Icon size={24} className="sm:w-7 sm:h-7" />
               </motion.a>
             ))}
           </motion.div>
         </div>
-      </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 1.5 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 mb-9"
-      >
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1.5 h-1.5 bg-white rounded-full mt-2"
-          />
-        </div>
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 1.5 }}
+          className="absolute -bottom-44 left-1/2 transform -translate-x-1/2"
+        >
+          <div className="w-6 h-10 border-2 border-[#D1D1D1] rounded-full flex justify-center">
+            <motion.div
+              animate={{ y: [0, 12, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+              className="w-1.5 h-1.5 bg-black rounded-full mt-2"
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );

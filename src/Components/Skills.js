@@ -49,16 +49,16 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-20 bg-black" id="skills">
+    <section className="py-20 bg-[#f3f2ef]" id="skills">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           ref={ref}
-          className="text-4xl font-bold text-center text-white mb-16"
+          className="text-4xl font-bold text-center text-black mb-16"
         >
-          Technical Skills
+          Technical <span className='text-[#0A66C2]'>Skills</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,11 +70,11 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-[#112240] border border-[#2F3336] p-6 rounded-lg shadow-xl"
+                className="bg-white border border-[#D1D1D1] p-6 rounded-lg shadow-xl"
               >
                 <div className="flex items-center mb-4">
                   <Icon className={`w-8 h-8`} style={{ color: skill.color }} />
-                  <h3 className="text-xl font-semibold text-white ml-3">
+                  <h3 className="text-xl font-semibold text-black ml-3">
                     {skill.category}
                   </h3>
                 </div>
@@ -83,7 +83,7 @@ export default function Skills() {
                     <motion.span
                       key={itemIndex}
                       whileHover={{ scale: 1.05 }}
-                      className="px-3 py-1 bg-[#233554] text-[#64ffda] rounded-full text-sm"
+                      className="px-3 py-1 bg-[#f3f2ef] text-[#333333] border border-[#D1D1D1] rounded-full text-sm"
                     >
                       {item}
                     </motion.span>

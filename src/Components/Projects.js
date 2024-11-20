@@ -37,16 +37,16 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-12 sm:py-20 bg-black " id="projects">
+    <section className="py-12 sm:py-20 bg-[#f3f2ef] " id="projects">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           ref={ref}
-          className="text-3xl sm:text-4xl font-bold text-center text-[#64ffda] mb-8 sm:mb-16"
+          className="text-3xl sm:text-4xl font-bold text-center text-black mb-8 sm:mb-16"
         >
-          Featured Projects
+          Featured <span className='text-[#0A66C2]'>Projects</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -56,7 +56,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-[#112240] border border-[#2F3336] rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="bg-white border border-[#D1D1D1] rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
             >
               <div className="relative h-40 sm:h-48">
                 <img
@@ -87,13 +87,13 @@ export default function Projects() {
               </div>
 
               <div className="p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{project.title}</h3>
-                <p className="text-sm sm:text-base text-gray-400 mb-4">{project.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-black mb-2">{project.title}</h3>
+                <p className="text-sm sm:text-base text-[#333333] mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 sm:px-3 text-xs sm:text-sm bg-[#233554]text-[#64ffda] rounded-full"
+                      className="px-2 py-1 sm:px-3 text-xs sm:text-sm text-[#333333] rounded-full"
                     >
                       {tag}
                     </span>
