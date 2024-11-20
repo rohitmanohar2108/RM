@@ -70,7 +70,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-gray-900 rounded-full hover:bg-gray-700 transition-colors"
+                      className="p-2 bg-[#0A66C2] rounded-full hover:bg-gray-700 transition-colors"
                     >
                       <Github className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </a>
@@ -78,7 +78,7 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-gray-900 rounded-full hover:bg-gray-700 transition-colors"
+                      className="p-2 bg-[#0A66C2] rounded-full hover:bg-gray-700 transition-colors"
                     >
                       <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </a>
