@@ -85,7 +85,7 @@ export default function Navigation() {
                     <motion.a
                       key={item.name}
                       href={item.href}
-                      className="text-white text-lg sm:text-xl font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 ml-36 mt-20"
+                      className="text-white text-lg sm:text-xl font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50"
                       whileHover={{ x: 10 }}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
