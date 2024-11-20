@@ -37,7 +37,7 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-14 sm:h-16">
             <motion.a
               href="#home"
-              className="text-xl sm:text-2xl font-bold text-white bg-[#0A66C2] px-1 py-1 rounded-sm"
+              className="text-xl sm:text-2xl font-bold text-white bg-[#0A66C2] px-2 py-1 rounded-sm"
               whileHover={{ scale: 1.05 }}
             >
               JD
@@ -78,7 +78,7 @@ export default function Navigation() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-40 md:hidden"
           >
-            <div className="absolute inset-0 bg-[#f3f2ef] backdrop-blur-sm pt-16">
+            <div className="absolute inset-0 bg-white backdrop-blur-sm pt-16">
               <div className="container mx-auto px-4">
                 <div className="flex flex-col space-y-2">
                   {navItems.map((item) => (
