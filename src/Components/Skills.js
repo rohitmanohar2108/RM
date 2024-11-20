@@ -7,31 +7,37 @@ const skills = [
   {
     category: "Frontend Development",
     icon: Layout,
+    color: "#E34F26", // Example: Orange for frontend
     items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
   },
   {
     category: "Backend Development",
     icon: Terminal,
+    color: "#4CAF50", // Example: Green for backend
     items: ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL"]
   },
   {
     category: "Mobile Development",
     icon: Smartphone,
+    color: "#42A5F5", // Example: Blue for mobile
     items: ["React Native", "Expo", "iOS", "Android", "PWA"]
   },
   {
     category: "Database",
     icon: Database,
+    color: "#FFD700", // Example: Gold for database
     items: ["MongoDB", "PostgreSQL", "Redis", "Firebase", "Prisma"]
   },
   {
     category: "DevOps",
     icon: Settings,
+    color: "#FF5722", // Example: Deep orange for DevOps
     items: ["Docker", "AWS", "CI/CD", "Kubernetes", "Linux"]
   },
   {
     category: "Programming Languages",
     icon: Code2,
+    color: "#9C27B0", // Example: Purple for programming languages
     items: ["JavaScript", "TypeScript", "Python", "Java", "C++"]
   }
 ];
@@ -67,8 +73,10 @@ export default function Skills() {
                 className="bg-[#112240] border border-[#2F3336] p-6 rounded-lg shadow-xl"
               >
                 <div className="flex items-center mb-4">
-                  <Icon className="w-8 h-8 text-[#64ffda] mr-3" />
-                  <h3 className="text-xl font-semibold text-white">{skill.category}</h3>
+                  <Icon className={`w-8 h-8`} style={{ color: skill.color }} />
+                  <h3 className="text-xl font-semibold text-white ml-3">
+                    {skill.category}
+                  </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item, itemIndex) => (
