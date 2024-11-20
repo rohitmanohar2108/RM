@@ -10,7 +10,7 @@ export default function Contact() {
   });
 
   return (
-    <section className="py-12 sm:py-20 bg-black" id="contact">
+    <section className="py-12 sm:py-20 bg-black border-t border-[#2F3336]" id="contact">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           ref={ref}

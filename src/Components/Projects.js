@@ -37,7 +37,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-12 sm:py-20 bg-black" id="projects">
+    <section className="py-12 sm:py-20 bg-black border-t border-[#2F3336]" id="projects">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="bg-[#112240] border border-[#2F3336] rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
             >
               <div className="relative h-40 sm:h-48">
                 <img

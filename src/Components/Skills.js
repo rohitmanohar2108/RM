@@ -43,7 +43,7 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-20 bg-black" id="skills">
+    <section className="py-20 bg-black border-t border-[#2F3336]" id="skills">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-gray-900 p-6 rounded-lg shadow-xl"
+                className="bg-[#112240] border border-[#2F3336] p-6 rounded-lg shadow-xl"
               >
                 <div className="flex items-center mb-4">
                   <Icon className="w-8 h-8 text-blue-500 mr-3" />

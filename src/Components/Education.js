@@ -37,7 +37,7 @@ export default function Education() {
   });
 
   return (
-    <section className="py-20 bg-black" id="education">
+    <section className="py-20 bg-black border-t border-[#2F3336]" id="education">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export default function Education() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className="relative"
             >
-              <div className="bg-[#112240] p-8 rounded-lg shadow-xl hover:shadow-[#64ffda]/10 transition-all duration-300">
+              <div className="bg-[#112240] border border-[#2F3336] p-8 rounded-lg shadow-xl hover:shadow-[#64ffda]/10 transition-all duration-300">
                 <div className="absolute top-6 right-6 text-[#64ffda] opacity-10">
                   <GraduationCap size={60} />
                 </div>
