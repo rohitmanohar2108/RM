@@ -57,7 +57,7 @@ export default function Experience() {
             >
               <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-[#64ffda]" />
               
-              <div className="bg-slate-800 border-t border-[#2F3336] p-6 rounded-lg shadow-xl hover:shadow-[#64ffda]/10 transition-all duration-300">
+              <div className="bg-slate-800 border border-[#2F3336] p-6 rounded-lg shadow-xl hover:shadow-[#64ffda]/10 transition-all duration-300">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-semibold text-[#ccd6f6]">{exp.title}</h3>
                   <div className="flex items-center text-[#8892b0]">
