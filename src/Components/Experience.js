@@ -34,7 +34,7 @@ export default function Experience() {
   });
 
   return (
-    <section className="py-20 bg-[#15202B] backdrop-blur-sm" id="experience">
+    <section className="py-20 bg-[#15202B] border-t border-[#2F3336] backdrop-blur-sm" id="experience">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
