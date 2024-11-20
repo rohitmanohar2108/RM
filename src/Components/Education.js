@@ -37,7 +37,7 @@ export default function Education() {
   });
 
   return (
-    <section className="py-20 bg-black border-t border-[#2F3336]" id="education">
+    <section className="py-20 bg-black " id="education">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export default function Education() {
                 </div>
 
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                  <h3 className="text-2xl font-bold text-[#ccd6f6] mb-2 md:mb-0">
+                  <h3 className="text-2xl font-bold text-white mb-2 md:mb-0">
                     {edu.degree}
                   </h3>
                   <div className="flex items-center text-[#8892b0]">
@@ -81,7 +81,7 @@ export default function Education() {
                 <p className="text-[#8892b0] mb-6">{edu.description}</p>
 
                 <div className="space-y-3">
-                  <h4 className="text-[#ccd6f6] font-semibold mb-2">Key Achievements:</h4>
+                  <h4 className="text-white font-semibold mb-2">Key Achievements:</h4>
                   {edu.achievements.map((achievement, achIndex) => (
                     <motion.div
                       key={achIndex}

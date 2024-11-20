@@ -43,7 +43,7 @@ export default function Skills() {
   });
 
   return (
-    <section className="py-20 bg-black border-t border-[#2F3336]" id="skills">
+    <section className="py-20 bg-black" id="skills">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ export default function Skills() {
                 className="bg-[#112240] border border-[#2F3336] p-6 rounded-lg shadow-xl"
               >
                 <div className="flex items-center mb-4">
-                  <Icon className="w-8 h-8 text-blue-500 mr-3" />
+                  <Icon className="w-8 h-8 text-[#64ffda] mr-3" />
                   <h3 className="text-xl font-semibold text-white">{skill.category}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -75,7 +75,7 @@ export default function Skills() {
                     <motion.span
                       key={itemIndex}
                       whileHover={{ scale: 1.05 }}
-                      className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm"
+                      className="px-3 py-1 bg-[#233554] text-[#64ffda] rounded-full text-sm"
                     >
                       {item}
                     </motion.span>

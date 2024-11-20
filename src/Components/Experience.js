@@ -34,7 +34,7 @@ export default function Experience() {
   });
 
   return (
-    <section className="py-20 bg-black border-t border-[#2F3336] backdrop-blur-sm" id="experience">
+    <section className="py-20 bg-black border-t border-[#2F3336]  backdrop-blur-sm" id="experience">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function Experience() {
               
               <div className="bg-[#112240] border border-[#2F3336] p-6 rounded-lg shadow-xl hover:shadow-[#64ffda]/10 transition-all duration-300">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-[#ccd6f6]">{exp.title}</h3>
+                  <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
                   <div className="flex items-center text-[#8892b0]">
                     <Calendar size={16} className="mr-2" />
                     <span className="text-sm">{exp.period}</span>

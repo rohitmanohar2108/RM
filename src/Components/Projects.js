@@ -37,14 +37,14 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-12 sm:py-20 bg-black border-t border-[#2F3336]" id="projects">
+    <section className="py-12 sm:py-20 bg-black " id="projects">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           ref={ref}
-          className="text-3xl sm:text-4xl font-bold text-center text-white mb-8 sm:mb-16"
+          className="text-3xl sm:text-4xl font-bold text-center text-[#64ffda] mb-8 sm:mb-16"
         >
           Featured Projects
         </motion.h2>
@@ -93,7 +93,7 @@ export default function Projects() {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 sm:px-3 text-xs sm:text-sm bg-blue-500 text-white rounded-full"
+                      className="px-2 py-1 sm:px-3 text-xs sm:text-sm bg-[#233554]text-[#64ffda] rounded-full"
                     >
                       {tag}
                     </span>
